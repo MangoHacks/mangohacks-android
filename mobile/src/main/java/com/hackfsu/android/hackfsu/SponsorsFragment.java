@@ -17,7 +17,6 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.hackfsu.android.hackfsu.R;
 import com.parse.FindCallback;
 import com.parse.GetDataCallback;
 import com.parse.ParseClassName;
@@ -97,7 +96,7 @@ public class SponsorsFragment extends BaseFragment {
             @Override
             public void done(List<Sponsor> list, ParseException e) {
                 if(e != null) {
-                    Log.e("HackFSU", "Error: " + e.getMessage());
+                    Log.e("MangoHacks", "Error: " + e.getMessage());
                 } else {
                     mAdapter.notifyItemRangeRemoved(0, mAdapter.getItemCount());
                     mAdapter.replaceDataset(list);
@@ -117,7 +116,7 @@ public class SponsorsFragment extends BaseFragment {
                     @Override
                     public void done(List<Sponsor> list, ParseException e) {
                         if (e != null) {
-                            Log.e("HackFSU", e.getMessage());
+                            Log.e("MangoHacks", e.getMessage());
                             Snackbar.make(mRecyclerView, "Could not refresh.", Snackbar.LENGTH_SHORT)
                                     .show();
                         } else {
@@ -206,7 +205,7 @@ public class SponsorsFragment extends BaseFragment {
                 @Override
                 public void done(byte[] data, ParseException e) {
                     if(e != null) {
-                        Log.e("HackFSU Sponsors", "Someone fucked up uploading the image for " + name);
+                        Log.e("MangoHacks Sponsors", "Someone fucked up uploading the image for " + name);
                     } else {
                         /*int height = holder.mSponsorImage.getHeight();
                         LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) holder.mSponsorImage.getLayoutParams();
@@ -220,7 +219,7 @@ public class SponsorsFragment extends BaseFragment {
             // Level
 
             Typeface face;
-            face = Typeface.createFromAsset(getContext().getAssets(), getResources().getString(R.string.hackfsu_font));
+            face = Typeface.createFromAsset(getContext().getAssets(), getResources().getString(R.string.mangohacks_font));
 
             String tier = "Tier " + String.valueOf(level);
             holder.mSponsorLevel.setText(tier);

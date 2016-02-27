@@ -77,7 +77,7 @@ public class ScheduleFragment extends BaseFragment {
             @Override
             public void done(List<ScheduleItem> list, ParseException e) {
                 if(e != null) {
-                    Log.e("HackFSU", "Error: " + e.getMessage());
+                    Log.e("MangoHacks", "Error: " + e.getMessage());
                 } else {
                     mAdapter.notifyItemRangeRemoved(0, mAdapter.getItemCount());
                     mAdapter.replaceDataset(list);
@@ -98,7 +98,7 @@ public class ScheduleFragment extends BaseFragment {
                     @Override
                     public void done(List<ScheduleItem> list, ParseException e) {
                         if (e != null) {
-                            Log.e("HackFSU", e.getMessage());
+                            Log.e("MangoHacks", e.getMessage());
                             Snackbar.make(mRecyclerView, "Could not refresh.", Snackbar.LENGTH_SHORT)
                                     .show();
                         } else {

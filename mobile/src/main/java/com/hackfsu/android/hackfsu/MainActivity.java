@@ -19,8 +19,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import com.hackfsu.android.hackfsu.R;
-
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, Toolbar.OnMenuItemClickListener,
         BaseFragment.OnFragmentInteractionListener {
@@ -51,8 +49,8 @@ public class MainActivity extends AppCompatActivity
 
 
         TextView navHeader = (TextView) navigationView.getHeaderView(0).findViewById(R.id.tv_navtitle);
-        navHeader.setText("HACKFSU");
-        navHeader.setTypeface(Typeface.createFromAsset(getAssets(), getResources().getString(R.string.hackfsu_font)));
+        navHeader.setText("MangoHacks");
+        navHeader.setTypeface(Typeface.createFromAsset(getAssets(), getResources().getString(R.string.mangohacks_font)));
 
     }
 
@@ -86,20 +84,20 @@ public class MainActivity extends AppCompatActivity
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        SharedPreferences sp = getSharedPreferences(HackFSU.PREFERENCES, MODE_PRIVATE);
+        SharedPreferences sp = getSharedPreferences(MangoHacks.PREFERENCES, MODE_PRIVATE);
 
         switch(id) {
             case R.id.action_countdown:
-                boolean showCountdown = !sp.getBoolean(HackFSU.COUNTDOWN, true);
-                Log.d("HackFSU", ""+showCountdown);
+                boolean showCountdown = !sp.getBoolean(MangoHacks.COUNTDOWN, true);
+                Log.d("MangoHacks", ""+showCountdown);
                 item.setIcon(showCountdown ? R.drawable.ic_timer_24dp : R.drawable.ic_timer_off_white_24dp);
-                sp.edit().putBoolean(HackFSU.COUNTDOWN, showCountdown).apply();
+                sp.edit().putBoolean(MangoHacks.COUNTDOWN, showCountdown).apply();
                 break;
             case R.id.action_notifications:
-                boolean allowNotifications = !sp.getBoolean(HackFSU.NOTIFICATIONS, true);
-                Log.d("HackFSU", ""+allowNotifications);
+                boolean allowNotifications = !sp.getBoolean(MangoHacks.NOTIFICATIONS, true);
+                Log.d("MangoHacks", ""+allowNotifications);
                 item.setIcon(allowNotifications ? R.drawable.ic_notifications_24dp : R.drawable.ic_notifications_off_24dp);
-                sp.edit().putBoolean(HackFSU.NOTIFICATIONS, allowNotifications).apply();
+                sp.edit().putBoolean(MangoHacks.NOTIFICATIONS, allowNotifications).apply();
                 Snackbar.make(drawer, (allowNotifications ? "Notifications Enabled" : "Notifications Disabled"), Snackbar.LENGTH_SHORT).show();
                 break;
         }
@@ -129,7 +127,7 @@ public class MainActivity extends AppCompatActivity
                     startActivity(new Intent(this, HelpActivity.class));
                     break;
                 case R.id.nav_website:
-                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.hackfsu.com"));
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mangohacks.com"));
                     startActivity(browserIntent);
 
             }
@@ -140,9 +138,9 @@ public class MainActivity extends AppCompatActivity
     }
 
     public void initPrefs() {
-        SharedPreferences sp = getSharedPreferences(HackFSU.PREFERENCES, MODE_PRIVATE);
-        if(!sp.contains(HackFSU.NOTIFICATIONS)) sp.edit().putBoolean(HackFSU.NOTIFICATIONS, true).apply();
-        if(!sp.contains(HackFSU.COUNTDOWN)) sp.edit().putBoolean(HackFSU.COUNTDOWN, true).apply();
+        SharedPreferences sp = getSharedPreferences(MangoHacks.PREFERENCES, MODE_PRIVATE);
+        if(!sp.contains(MangoHacks.NOTIFICATIONS)) sp.edit().putBoolean(MangoHacks.NOTIFICATIONS, true).apply();
+        if(!sp.contains(MangoHacks.COUNTDOWN)) sp.edit().putBoolean(MangoHacks.COUNTDOWN, true).apply();
     }
 
     @Override

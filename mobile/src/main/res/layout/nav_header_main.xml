@@ -27,11 +27,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="HackFSU"
+            android:text="MangoHacks"
             android:id="@+id/tv_navtitle"
             android:textSize="34sp"
             android:textColor="@color/primaryTextLight"
+            android:textStyle="bold"
             android:fontFamily="sans-serif-medium" />
+
     </LinearLayout>
 
 </RelativeLayout>

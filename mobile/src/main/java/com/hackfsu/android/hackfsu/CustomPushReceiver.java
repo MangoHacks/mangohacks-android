@@ -17,8 +17,8 @@ public class CustomPushReceiver extends ParsePushBroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
 
         // Check for the setting
-        SharedPreferences sp = context.getSharedPreferences(HackFSU.PREFERENCES, Context.MODE_PRIVATE);
-        if(sp.getBoolean(HackFSU.NOTIFICATIONS, true)) {
+        SharedPreferences sp = context.getSharedPreferences(MangoHacks.PREFERENCES, Context.MODE_PRIVATE);
+        if(sp.getBoolean(MangoHacks.NOTIFICATIONS, true)) {
             super.onReceive(context, intent);
         }
 

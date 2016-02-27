@@ -93,7 +93,7 @@ public class MapsFragment extends BaseFragment {
             @Override
             public void done(List<MapItem> list, ParseException e) {
                 if(e != null) {
-                    Log.e("HackFSU", "Error: " + e.getMessage());
+                    Log.e("MangoHacks", "Error: " + e.getMessage());
                 } else {
                     mAdapter.notifyItemRangeRemoved(0, mAdapter.getItemCount());
                     mAdapter.replaceDataset(list);
@@ -113,7 +113,7 @@ public class MapsFragment extends BaseFragment {
                     @Override
                     public void done(List<MapItem> list, ParseException e) {
                         if(e != null) {
-                            Log.e("HackFSU", "Error: " + e.getMessage());
+                            Log.e("MangoHacks", "Error: " + e.getMessage());
                         } else {
                             mAdapter.notifyItemRangeRemoved(0, mAdapter.getItemCount());
                             mAdapter.replaceDataset(list);
@@ -187,7 +187,7 @@ public class MapsFragment extends BaseFragment {
                 @Override
                 public void done(final byte[] data, ParseException e) {
                     if(e != null) {
-                        Log.e("HackFSU", e.getMessage());
+                        Log.e("MangoHacks", e.getMessage());
                     } else {
 
                         holder.mMapItemImage.setOnClickListener(new View.OnClickListener() {

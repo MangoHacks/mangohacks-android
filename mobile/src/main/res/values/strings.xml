@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HackFSU</string>
+    <string name="app_name">MangoHacks</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -12,6 +12,6 @@
     <string name="title_activity_help">HelpActivity</string>
     <string name="title_activity_test">TestActivity</string>
 
-    <string name="hackfsu_font">uni_sans_heavy-webfont.ttf</string>
+    <string name="mangohacks_font">montserrat-bold.ttf</string>
 
 </resources>

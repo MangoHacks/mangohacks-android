@@ -52,7 +52,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
-        android:src="@drawable/doge"
         android:layout_gravity="bottom"
         android:layout_weight="1"
         android:scaleType="fitEnd" />

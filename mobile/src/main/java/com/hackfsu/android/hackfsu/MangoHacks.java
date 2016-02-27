@@ -8,7 +8,7 @@ import com.parse.ParseObject;
 import com.parse.ParsePush;
 
 
-public class HackFSU extends Application {
+public class MangoHacks extends Application {
 
     public static final String PREFERENCES = "preferences";
     public static final String NOTIFICATIONS = "notifications";
@@ -25,7 +25,7 @@ public class HackFSU extends Application {
         ParseObject.registerSubclass(MapsFragment.MapItem.class);
         ParseObject.registerSubclass(FeedFragment.CountdownItem.class);
 
-        Parse.initialize(this, "7MgItVIkvSmADkIdIVPmEbIOOZQ84ilW224wXsgS", "hHoLbbe3SWIzt6JiXaNY5gdPQ47QBGH6AlbHHTih");
+        Parse.initialize(this, "GLMDltnGHl8uoy8M9tzTolYjCefsvlGoVLrRSXJV", "Y3DOrD8WJ4RSmwYq3uyz4J1EnpPOPQa3hGpSeYRA");
         ParseInstallation.getCurrentInstallation().saveInBackground();
 
         ParsePush.subscribeInBackground("updates");

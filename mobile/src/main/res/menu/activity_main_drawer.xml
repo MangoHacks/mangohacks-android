@@ -16,7 +16,7 @@
         <item android:id="@+id/nav_help"
             android:title="Request Mentor" />
         <item android:id="@+id/nav_website"
-            android:title="HackFSU.com"/>
+            android:title="MangoHacks.com"/>
     </group>
 
 

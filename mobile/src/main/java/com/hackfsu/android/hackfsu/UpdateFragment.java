@@ -88,7 +88,7 @@ public class UpdateFragment extends BaseFragment {
             @Override
             public void done(List<UpdateItem> list, ParseException e) {
                 if (e != null) {
-                    Log.e("HackFSU", e.getMessage());
+                    Log.e("MangoHacks", e.getMessage());
                 } else {
                     mAdapter.notifyItemRangeRemoved(0, mAdapter.getItemCount());
                     mAdapter.replaceDataset(list);
@@ -110,7 +110,7 @@ public class UpdateFragment extends BaseFragment {
                     @Override
                     public void done(List<UpdateItem> list, ParseException e) {
                         if (e != null) {
-                            Log.e("HackFSU", e.getMessage());
+                            Log.e("MangoHacks", e.getMessage());
                             Snackbar.make(mRecyclerView, "Could not refresh.", Snackbar.LENGTH_SHORT)
                                     .show();
                         } else {

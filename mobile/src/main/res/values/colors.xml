@@ -44,12 +44,13 @@
     <color name="secondaryTextDark">@color/abc_secondary_text_material_light</color>
 
 
-    <!-- HackFSU Colors -->
-    <color name="hackfsu_red">#ea495a</color>
-    <color name="hackfsu_redDark">#bf3d4a</color>
+    <!-- MangoHacks Colors -->
+    <!-- Thanks HackFSU! -->
+    <color name="hackfsu_red">#00E35C</color>
+    <color name="hackfsu_redDark">#00B44D</color>
 
-    <color name="hackfsu_teal">#72c9be</color>
-    <color name="hackfsu_tealDark">#66b5aa</color>
+    <color name="hackfsu_teal">#FFB600</color>
+    <color name="hackfsu_tealDark">#FF9800</color>
 
     <color name="hackfsu_blue">#a8d3f1</color>
     <color name="hackfsu_blueDark">#87b0d0</color>

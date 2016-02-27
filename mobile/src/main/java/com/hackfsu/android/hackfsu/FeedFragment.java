@@ -74,19 +74,19 @@ public class FeedFragment extends BaseFragment {
         // Toolbar stuff
         //toolbar.inflateMenu(R.menu.menu_main);
         //setSupportActionBar(mToolbar);
-        //mToolbar.setTitle("HackFSU");
+        //mToolbar.setTitle("MangoHacks");
         mToolbar.setNavigationIcon(R.drawable.ic_menu_white_24dp);
         mToolbar.inflateMenu(R.menu.menu_main);
         mListener.registerToolbar(mToolbar);
 
         // Init toolbar icons
-        final SharedPreferences sp = getContext().getSharedPreferences(HackFSU.PREFERENCES, Context.MODE_PRIVATE);
+        final SharedPreferences sp = getContext().getSharedPreferences(MangoHacks.PREFERENCES, Context.MODE_PRIVATE);
         Menu menu = mToolbar.getMenu();
         MenuItem notifs = menu.findItem(R.id.action_notifications);
-        notifs.setIcon(sp.getBoolean(HackFSU.NOTIFICATIONS, true) ?
+        notifs.setIcon(sp.getBoolean(MangoHacks.NOTIFICATIONS, true) ?
                 R.drawable.ic_notifications_24dp : R.drawable.ic_notifications_off_24dp);
         MenuItem countdown = menu.findItem(R.id.action_countdown);
-        countdown.setIcon(sp.getBoolean(HackFSU.COUNTDOWN, true) ?
+        countdown.setIcon(sp.getBoolean(MangoHacks.COUNTDOWN, true) ?
                 R.drawable.ic_timer_24dp : R.drawable.ic_timer_off_white_24dp);
 
 
@@ -105,10 +105,10 @@ public class FeedFragment extends BaseFragment {
 
         // Custom toolbar font
         Typeface face;
-        face = Typeface.createFromAsset(getContext().getAssets(), getResources().getString(R.string.hackfsu_font));
+        face = Typeface.createFromAsset(getContext().getAssets(), getResources().getString(R.string.mangohacks_font));
         mCollasping.setCollapsedTitleTypeface(face);
         mCollasping.setExpandedTitleTypeface(face);
-        mCollasping.setTitle("HackFSU");
+        mCollasping.setTitle("MangoHacks");
 
         mCountdownLabel.setTypeface(face);
         mCountdownTime.setTypeface(face);
@@ -132,15 +132,15 @@ public class FeedFragment extends BaseFragment {
 
                 if(e == null && object != null) {
                     mCountdownLabel.setText(object.getLabel());
-                    Log.d("HackFSU", "Object label: " + object.getLabel());
-                    Log.d("HackFSU", "Object time: " + object.getTime().toString());
+                    Log.d("MangoHacks", "Object label: " + object.getLabel());
+                    Log.d("MangoHacks", "Object time: " + object.getTime().toString());
 
 
                     long until = (object.getTime().getTime() - System.currentTimeMillis());
                     new CountDownTimer(until, 1000) {
                         @Override
                         public void onFinish() {
-                            mCountdownTime.setText("HackFSU");
+                            mCountdownTime.setText("MangoHacks");
                             mCountdownLabel.setText("");
                             initNextTimer();
                         }
@@ -159,10 +159,10 @@ public class FeedFragment extends BaseFragment {
                         }
                     }.start();
                 } else if(object == null) {
-                    mCountdownTime.setText("HackFSU");
+                    mCountdownTime.setText("MangoHacks");
                     mCountdownLabel.setText("");
                 } else if(e != null) {
-                    Log.e("HackFSU", e.getMessage());
+                    Log.e("MangoHacks", e.getMessage());
                 }
             }
         });
