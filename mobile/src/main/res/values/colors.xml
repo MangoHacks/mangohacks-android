@@ -2,9 +2,9 @@
 <resources>
 
     <!-- Material Colors -->
-    <color name="primary">@color/hackfsu_red</color>
-    <color name="primaryDark">@color/hackfsu_redDark</color>
-    <color name="accent">@color/hackfsu_teal</color>
+    <color name="primary">@color/mangohacks_green</color>
+    <color name="primaryDark">@color/mangohacks_greenDark</color>
+    <color name="accent">@color/mangohacks_orange</color>
     <color name="background">@color/grey_200</color>
 
     <color name="divider_dark">#1F000000</color>
@@ -25,17 +25,7 @@
     <color name="help_submit">@color/primaryDark</color>
     <color name="sponsors">@color/primary</color>
     <color name="sponsors_dark">@color/primaryDark</color>
-    
-    <!--
-    <color name="maps">@color/hackfsu_yellow</color>
-    <color name="maps_dark">@color/hackfsu_yellowDark</color>
-    <color name="maps_bg">@color/grey_50</color>
-    <color name="help">@color/primary</color>
-    <color name="help_dark">@color/primaryDark</color>
-    <color name="help_submit">@color/hackfsu_tealDark</color>
-    <color name="sponsors">@color/hackfsu_teal</color>
-    <color name="sponsors_dark">@color/hackfsu_tealDark</color>
-    -->
+
 
     <!-- Text Colors -->
     <color name="primaryTextLight">@color/abc_primary_text_material_dark</color>
@@ -46,17 +36,17 @@
 
     <!-- MangoHacks Colors -->
     <!-- Thanks HackFSU! -->
-    <color name="hackfsu_red">#00E35C</color>
-    <color name="hackfsu_redDark">#00B44D</color>
+    <color name="mangohacks_green">#00E35C</color>
+    <color name="mangohacks_greenDark">#00B44D</color>
 
-    <color name="hackfsu_teal">#FFB600</color>
-    <color name="hackfsu_tealDark">#FF9800</color>
+    <color name="mangohacks_orange">#FFB600</color>
+    <color name="mangohacks_orangeDark">#FF9800</color>
 
-    <color name="hackfsu_blue">#a8d3f1</color>
-    <color name="hackfsu_blueDark">#87b0d0</color>
+    <color name="mangohacks_blue">#a8d3f1</color>
+    <color name="mangohacks_blueDark">#87b0d0</color>
 
-    <color name="hackfsu_yellow">#e4bca1</color>
-    <color name="hackfsu_yellowDark">#c29a7f</color>
+    <color name="mangohacks_yellow">#e4bca1</color>
+    <color name="mangohacks_yellowDark">#c29a7f</color>
 
 
     <!-- Material Greys -->

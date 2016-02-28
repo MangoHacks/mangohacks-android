@@ -60,7 +60,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/tv_countdown_time"
-                    android:text="HackFSU"
+                    android:text="MangoHacks"
                     android:visibility="visible"
                     android:layout_gravity="center"
                     style="@style/AppTheme.CountdownTime" />

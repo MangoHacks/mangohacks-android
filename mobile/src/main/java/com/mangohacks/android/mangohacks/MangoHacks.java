@@ -1,4 +1,4 @@
-package com.hackfsu.android.hackfsu;
+package com.mangohacks.android.mangohacks;
 
 import android.app.Application;
 

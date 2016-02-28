@@ -4,7 +4,7 @@ android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
     defaultConfig {
-        applicationId 'com.hackfsu.android.hackfsu'
+        applicationId 'com.mangohacks.android.mangohacks'
         minSdkVersion 16
         targetSdkVersion 23
         versionCode 8

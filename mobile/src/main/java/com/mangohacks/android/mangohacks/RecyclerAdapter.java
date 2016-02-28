@@ -1,12 +1,10 @@
-package com.hackfsu.android.hackfsu;
+package com.mangohacks.android.mangohacks;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
-import com.hackfsu.android.hackfsu.R;
 
 /**
  * Created by andrewsosa on 9/25/15.

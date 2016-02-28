@@ -14,7 +14,7 @@
 
     <group android:id="@+id/secondary">
         <item android:id="@+id/nav_help"
-            android:title="Request Mentor" />
+            android:title="Mentorship Slack" />
         <item android:id="@+id/nav_website"
             android:title="MangoHacks.com"/>
     </group>

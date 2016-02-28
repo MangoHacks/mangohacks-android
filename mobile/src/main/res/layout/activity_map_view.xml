@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.hackfsu.android.hackfsu.MapViewActivity">
+    tools:context="com.mangohacks.android.mangohacks.MapViewActivity">
 
-    <com.hackfsu.android.hackfsu.TouchImageView
+    <com.mangohacks.android.mangohacks.TouchImageView
         android:id="@+id/iv_map_image"
 	    android:layout_width="match_parent"
 	    android:layout_height="match_parent"/>

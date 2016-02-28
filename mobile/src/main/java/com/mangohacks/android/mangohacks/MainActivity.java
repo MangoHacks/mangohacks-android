@@ -1,4 +1,4 @@
-package com.hackfsu.android.hackfsu;
+package com.mangohacks.android.mangohacks;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -124,8 +124,8 @@ public class MainActivity extends AppCompatActivity
         } else if (item.getGroupId() == R.id.secondary) {
             switch (id) {
                 case R.id.nav_help:
-                    startActivity(new Intent(this, HelpActivity.class));
-                    break;
+                    Intent slackIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://slack.mangohacks.com"));
+                    startActivity(slackIntent);
                 case R.id.nav_website:
                     Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mangohacks.com"));
                     startActivity(browserIntent);
